@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASCII Photo Convertor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+    <h1>Ascii Art Convertor</h1>
+    <p class="subtitle">Turn your images into grayscale ASCII art</p>
+
+    <div class="controls">
+    
+        <input type="file" name="picture" accept="images/*">
+
+        <label for="detail">detail:
+        <input type="range" id="detail" min="40" max="160" value="80" step="10">
+        <span id="detailValue">120</span>
+        </label>
+
+    <button id="downloadTxt">Download as TXT</button>
+
+    </div>
+    <div class="preview-section">
+
+        <div class="image-preview">
+            <p>Prewview</p>
+            <canvas id="preview"></canvas>
+        </div>
+
+        <div class="ascii-preview">
+            <p>ASCII Output</p>
+            <pre id="ascii"></pre>
+        </div>
+
+    </div>
+
+
+    </main>
+
+
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
